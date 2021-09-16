@@ -8,39 +8,44 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
 }
-#container {
+#container-fluid {
   width: 100%;
-  max-width: 900px;
   height: auto;
-  margin: 0 auto;
   position: relative;
-  background-color: #3a7777;
-}
-#banner {
-  width: 100%;
-  height: 500px;
+  /* background-color: lightsteelblue; */
   background-image: url(images/stock1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+}
+#banner {
+  width: auto;
+  max-width: none;
+  min-width: 900px;
+  height: 500px;
+  /* background-image: url(images/stock1.jpg); */
+  background-size: cover;
   color: #0c3233;
+  margin: 0 auto;
 }
 #banner h1 {
-  position: absolute;
-  left: 50px;
-  top: 300px;
   font-size: 5.5rem;
+  text-align: center;
+  /* padding: 15% 0; */
 }
 #banner h2 {
-  position: absolute;
-  left: 50px;
-  top: 400px;
+  text-align: center;
 }
 #about {
   position: relative;
   color: white;
-  width: 100%;
+  min-width: 900px;
   max-width: 900px;
+  width: auto;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #3a7777;
 }
 .about-image {
   width: 300px;
@@ -92,7 +97,14 @@ body {
   background-size: cover;
   background-position-y: -300px;
   width: auto;
+  max-width: none;
+  min-width: 900px;
   height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 .section-header {
   position: absolute;
@@ -101,179 +113,99 @@ body {
   font-weight: bolder;
   font-size: 1.5rem;
 }
-.section-content {
+.hiw-num {
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
   position: absolute;
-  top: 40px;
-  left: 50px;
+  color: black;
+  background-color: #fbca06;
+  top: 155px;
   font-weight: bolder;
 }
-#hiw1 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+.hiw-text {
+  width: 220px;
+  height: 100px;
   background-color: #0c3233;
   text-align: center;
-  line-height: 40px;
   color: white;
-  position: absolute;
-  left: 100px;
-  top: 100px;
-}
-#hiw2 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #0c3233;
-  text-align: center;
-  line-height: 40px;
-  color: white;
-  position: absolute;
-  left: 385px;
-  top: 100px;
-}
-#hiw3 {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #0c3233;
-  text-align: center;
-  line-height: 40px;
-  color: white;
-  position: absolute;
-  left: 650px;
-  top: 100px;
-}
-#hiw-text1 {
-  width: 200px;
-  height: auto;
-  background-color: #0c3233;
-  border-radius: 20%;
-  text-align: center;
-  color: white;
-  line-height: 30px;
-  padding: 10px 20px;
-  position: absolute;
-  top: 160px;
-  left: 15px;
-}
-#hiw-text2 {
-  width: 200px;
-  height: auto;
-  background-color: #0c3233;
-  border-radius: 20%;
-  text-align: center;
-  color: white;
-  line-height: 30px;
-  padding: 10px 20px;
-  position: absolute;
-  top: 160px;
-  left: 300px;
-}
-#hiw-text3 {
-  width: 200px;
-  height: auto;
-  background-color: #0c3233;
-  border-radius: 20%;
-  text-align: center;
-  color: white;
-  line-height: 30px;
-  padding: 10px 20px;
-  position: absolute;
-  top: 160px;
-  left: 570px;
+  line-height: 25px;
 }
 #pricing {
-  position: relative;
   background-color: #fbca06;
-  background-size: cover;
-  background-position-y: -300px;
   width: auto;
+  max-width: none;
+  min-width: 900px;
   height: 500px;
   position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+#section-header {
+  position: absolute;
+  top: 2rem;
+  font-size: 2rem;
+}
+#price-tag {
+  width: 100px;
+  height: auto;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5%;
+}
+#pricing p {
+  position: absolute;
+  width: 200px;
+  top: 380px;
+  text-align: center;
+  color: black;
 }
 #price-box1 {
   width: 200px;
   height: 250px;
   background-image: url(images/brownies2.jpg);
   background-size: cover;
-  position: absolute;
-  left: 100px;
-  top: 100px;
   border-radius: 10%;
-}
-#price-tag1 {
-  width: 100px;
-  height: auto;
-  background-color: white;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5%;
-}
-#price-box1 p {
-  position: absolute;
-  top: 260px;
-  text-align: center;
 }
 #price-box2 {
   width: 200px;
   height: 250px;
   background-image: url(images/cookies3.JPG);
   background-size: cover;
-  position: absolute;
-  left: 350px;
-  top: 100px;
   border-radius: 10%;
 }
-#price-tag2 {
-  width: 100px;
-  height: auto;
-  background-color: white;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5%;
-}
-#price-box2 p {
-  position: absolute;
-  top: 260px;
-  text-align: center;
-}
+
 #price-box3 {
   width: 200px;
   height: 250px;
   background-image: url(images/combo3.JPG);
   background-size: cover;
-  position: absolute;
-  left: 600px;
-  top: 100px;
   border-radius: 10%;
 }
-#price-tag3 {
-  width: 100px;
-  height: auto;
-  background-color: white;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5%;
-}
-#price-box3 p {
-  position: absolute;
-  top: 260px;
-  text-align: center;
-}
+
 #socials {
   position: relative;
   color: white;
   background-size: cover;
   background-position-y: -300px;
-  width: auto;
+  width: 900px;
   height: 500px;
+  max-width: 900px;
+  margin: 0 auto;
   position: relative;
 }
 .socials-info {
-    width: 300px;
-    height: auto;
-    position: absolute;
-    top: 150px;
-    left: 600px;
-    line-height: 40px;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  left: 600px;
+  line-height: 40px;
 }
