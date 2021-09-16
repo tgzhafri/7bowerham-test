@@ -11,8 +11,8 @@ body {
   background-color: lightsteelblue;
 }
 #container {
-  width: 900px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 900px;
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -39,6 +39,8 @@ body {
 #about {
   position: relative;
   color: white;
+  width: 100%;
+  max-width: 900px;
 }
 .about-image {
   width: 300px;
